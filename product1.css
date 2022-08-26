@@ -92,8 +92,8 @@ opacity: 0.85;
 .svg-image{
     margin-right: 5px;
 }
-@media  screen and (orientation:portrait) {
-     body{ 
+@media  screen and (max-width:375px) {
+body {
         padding: 0px;
         margin: 0px;
         min-height: 100vh;
@@ -102,6 +102,28 @@ opacity: 0.85;
         align-items: center;
         justify-content: center;
         font-size: 16px;
-        background-color: hsl(30, 38%, 92%)
+        background-color: hsl(30, 38%, 92%);
     }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+        height: auto;
+        background-size: cover;
+        
+    }
+    .perfume-image{
+        content: url("./IMAGES/image-product-mobile.jpg");
+        width: 300px;
+        height: auto;
+        border-radius: 10px 10px 0px 0px ;
+    
+        
+    }
+    #right-side{
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+
   }
